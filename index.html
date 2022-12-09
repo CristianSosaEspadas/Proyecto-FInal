@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Psicology</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <script src="jquery.tinycarousel.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script src="wow.min.js"></script>
+    <script src="menu_despl_subir.js"></script>
+    <script>
+        $(function () {
+          $("#slider1").responsiveSlides({
+            auto: false,
+            pager: false,
+            nav: true,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+              $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+              $('.events').append("<li>after event fired.</li>");
+            }
+          });
+        });
+    </script>
+    <script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#slider2').tinycarousel();
+		});
+	</script>
+    <script>
+        $(function() {
+          $(".rslides").responsiveSlides();
+        });
+    </script>
+</head>
+<body>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <i id="subir" class="fa-solid fa-circle-up"></i>
+    <header class="ancho">
+        <figure>
+            <img src="img/logo.png" alt="">
+        </figure>
+        <div class="header_box">
+            <nav>
+                <div class="menu">
+                    <p>MENU</p>
+                    <i id="menu" class="fa-solid fa-bars"></i>
+                </div>
+                <ul id="contenedormenu">
+                    <li><a href="index.html" class="btn_ancla">Home</a></li>
+                    <li><a href="about.html" class="btn_ancla">About</a></li>
+                    <li><a href="#service" class="btn_ancla">Service</a></li>
+                    <li><a href="#blog" class="btn_ancla">Blog</a></li>
+                    <li><a href="#pages" class="btn_ancla">Pages</a></li>
+                    <li><a href="contac.html" class="btn_ancla">Contact</a></li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#" class="btn_naranja">Get in Touch</a>
+        </div>
+    </header>
+    <section class="callbacks_container ancho">
+        <ul id="slider1" class="rslides">
+            <li>
+                <img src="img/doctora mirando fijo.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/doctora mirando abajo.jpg" alt="">
+            </li>
+        </ul>
+        <div class="slider_box animate__animated animate__backInLeft">
+            <figure>
+                <img src="img/premios.png" alt="">
+            </figure>
+            <h1>Psuchology Specialist <br> Dr. Jakiya Smith</h1>
+            <p>There are many variations of passages lorem Ipsum available, but the majority hace suffered alteration.</p>
+            <div class="slider_buttons">
+                <a href="#" class="btn_naranja" id="btn">OUR SOLUTION</a>
+                <a href="#" class="btn_transparente">APPOINMENT</a>
+            </div>
+        </div>
+        <div class="slider_articles">
+            <article class="wow animate__animated animate__backInLeft">
+                <figure>
+                    <img src="img/manos corazon.png" alt="">
+                </figure>
+                <h3>Relationships Issues</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi.</p>
+                <a href="#" class="link_naranja">+ APPOINTMENT</a>
+            </article>
+            <article class="wow animate__animated animate__backInDown">
+                <figure>
+                    <img src="img/personas juntas.png" alt="">
+                </figure>
+                <h3>Anxiety Disorders</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi.</p>
+                <a href="#" class="link_naranja">+ APPOINTMENT</a>
+            </article>
+            <article class="wow animate__animated animate__backInRight">
+                <figure>
+                    <img src="img/cerebro.png" alt="">
+                </figure>
+                <h3>Psychologist Issues</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi.</p>
+                <a href="#" class="link_naranja">+ APPOINTMENT</a>
+            </article>
+        </div>
+    </section>
+    <section id="modal" class="fondomodal">
+        <div class="contenidomodal">
+            <p class="negritas_nar">Get in Touch</p>
+            <h2>Make An Free Consultant</h2>
+            <div class="formulario">
+                <input type="text" placeholder="Name*"  required>
+                <input type="email" placeholder="Email*"  required>
+                <input type="number" placeholder="Phone*"  required>
+                <input type="text" placeholder="Subject*"  required>
+                <input type="text" placeholder="Text Message*"  required>
+            </div>
+            <a href="#" class="btn_naranja">Send Message</a>
+            <i id="cerrarbtn" class="fa-solid fa-circle-xmark"></i>
+        </div>
+    </section>
+    <section class="psychology ancho">
+        <div class="psychology_izq wow animate__animated animate__fadeInLeft">
+            <article>
+                <figure>
+                    <img src="img/doctora con hombre.jpg" alt="">
+                </figure>
+                <div class="tarjeta">
+                    <figure>
+                        <img src="img/cabeza doctora wera.jpg" alt="">
+                    </figure>
+                    <div class="tarjeta_datos">
+                        <h3>Dr. Jakiya Smith</h3>
+                        <span>CEO - Pliosist</span>
+                    </div>
+                    <p class="gris">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi.</p>
+                </div>
+            </article>
+        </div>
+        <div class="psychology_der wow animate__animated animate__fadeInRight">
+            <p class="negritas_nar">Our Psychology</p>
+            <h2>Our Clinic Expert Psychologist from New York.</h2>
+            <p class="gris">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum minima, sed nisi officia veniam nesciunt vel ipsum praesentium error quo? Explicabo soluta cumque aut aliquid eaque facilis expedita commodi assumenda?</p>
+            <div class="palomas">
+                <div class="palomas_box">
+                    <i class="fa-solid fa-check"></i>
+                    <a href="#">Unlimited Revisions</a>
+                </div>
+                <div class="palomas_box">
+                    <i class="fa-solid fa-check"></i>
+                    <a href="#">Good Features</a>
+                </div>
+                <div class="palomas_box">
+                    <i class="fa-solid fa-check"></i>
+                    <a href="#">Best Solutions</a>
+                </div>
+                <div class="palomas_box">
+                    <i class="fa-solid fa-check"></i>
+                    <a href="#">24/7 Support</a>
+                </div>
+            </div>
+            <a href="#" class="btn_naranja">OUR ABOUT US</a>
+        </div>
+    </section>
+    <section class="libros ancho">
+        <p class="negritas_nar">Features Product</p>
+        <h2>Our Medical Psychology</h2>
+        <div id="slider2">
+            <a class="buttons prev" href="#"><i class="fa-solid fa-angle-left"></i></a>
+            <div class="viewport">
+                <ul class="overview">
+                    <li>
+                        <figure>
+                            <img src="img/libro psicología.jpg" alt="">
+                            <div class="emergente">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </figure>
+                        <h3>Popular Psychology</h3>
+                        <p class="negritas_nar">$99</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/libro psicología2.jpg" alt="">
+                            <div class="emergente">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </figure>
+                        <h3>Behavioral Psychology</h3>
+                        <p class="negritas_nar">$58</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/libro psicología3.jpg" alt="">
+                            <div class="emergente">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </figure>
+                        <h3>Pattern-Language</h3>
+                        <p class="negritas_nar">$115</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/libro psicología4.jpg" alt="">
+                            <div class="emergente">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </figure>
+                        <h3>Cliente-Psychology</h3>
+                        <p class="negritas_nar">$100</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="img/libro psicología5.jpg" alt="">
+                            <div class="emergente">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </figure>
+                        <h3>How To Analyze People</h3>
+                        <p class="negritas_nar">$98</p>
+                    </li>
+                </ul>
+            </div>
+            <a class="buttons next" href="#"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+    </section>
+    <section class="specialist ancho">
+        <article class="specialist_izq">
+            <p class="negritas_nar">Psychology Specialist</p>
+            <h2>Dr. Jakiya Smith</h2>
+            <p class="gris">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni necessitatibus voluptas quas obcaecati autem deleniti cumque esse.</p>
+            <a href="#" class="btn_naranja wow animate__animated animate__jello">OUR ABOUT US</a>
+        </article>
+        <figure>
+            <img src="img/doctora mirando fijo con zoom.jpg" alt="">
+        </figure>
+        <div class="specialist_der">
+            <article>
+                <h3>Our Position</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni necessitatibus voluptas quas obcaecati.</p>
+            </article>
+            <article>
+                <h3>Our Mission</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni necessitatibus voluptas quas obcaecati.</p>
+            </article>
+            <article>
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni necessitatibus voluptas quas obcaecati.</p>
+            </article>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="members ancho">
+        <p class="negritas_nar">Our Members</p>
+        <h2>Our Medical Psychology Members</h2>
+        <div class="members_box">
+            <article class="wow animate__animated animate__fadeIn">
+                <figure>
+                    <img src="img/doctor mirando abajo.jpg" alt="">
+                </figure>
+                <div class="members_datos">
+                    <h3>Kutubul Alam Putu</h3>
+                    <span>CEO & Funder</span>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </article>
+            <article class="wow animate__animated animate__fadeIn">
+                <figure>
+                    <img src="img/maestra hablando.jpg" alt="">
+                </figure>
+                <div class="members_datos">
+                    <h3>Arkina Alex</h3>
+                    <span>Psychology</span>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </article>
+            <article class="wow animate__animated animate__fadeIn">
+                <figure>
+                    <img src="img/doctora mirando members.jpg" alt="">
+                </figure>
+                <div class="members_datos">
+                    <h3>Helan Griffin</h3>
+                    <span>Therapists</span>
+                    <div class="redes">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="faqs ancho">
+        <figure>
+            <img src="img/doctora wera pensando.jpg" alt="">
+        </figure>
+        <div class="faqs_der">
+            <p class="negritas_nar">Our Members</p>
+            <h2>Our Clinic Expert Psychologist from New York.</h2>
+            <div class="faqs_cont">
+                <div class="pregunta">
+                    <h3>01. What is off page seo link building?</h3>
+                    <i class="fa-solid fa-chevron-down "></i>
+                </div>
+                <div class="respuesta gris">
+                    <p>A wonderful serenity has taken possession of my entire soul, these sweet mornings of spring which I enjoy with my whole eart. I am lone, and feel the charm</p>
+                </div>
+            </div>
+            <div class="faqs_cont">
+                <div class="pregunta">
+                    <h3>02. High Quality Data Security</h3>
+                    <i class="fa-solid fa-chevron-down "></i>
+                </div>
+                <div class="respuesta gris">
+                    <p>A wonderful serenity has taken possession of my entire soul, these sweet mornings of spring which I enjoy with my whole eart. I am lone, and feel the charm</p>
+                </div>
+            </div>
+            <div class="faqs_cont">
+                <div class="pregunta">
+                    <h3>03. How investing in dependend incer</h3>
+                    <i class="fa-solid fa-chevron-down "></i>
+                </div>
+                <div class="respuesta gris">
+                    <p>A wonderful serenity has taken possession of my entire soul, these sweet mornings of spring which I enjoy with my whole eart. I am lone, and feel the charm</p>
+                </div>
+            </div>
+            <div class="faqs_cont">
+                <div class="pregunta">
+                    <h3>04. Asing to Bussiness Security</h3>
+                    <i class="fa-solid fa-chevron-down "></i>
+                </div>
+                <div class="respuesta gris">
+                    <p>A wonderful serenity has taken possession of my entire soul, these sweet mornings of spring which I enjoy with my whole eart. I am lone, and feel the charm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contenedorfinal ancho">
+            <article>
+                <figure>
+                    <img src="img/logo footer.png" alt="">
+                </figure>
+                <p>Round whitefish flat loach potted killifish ronquil. Long-finned pike escolar northern pike escolar nor thern squawfish eel.</p>
+                <div class="redes">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </article>
+            <article>
+                <h3>Quick Links</h3>
+                <a href="#"><p>– Customers Services</p></a>
+                <a href="#"><p>– Department Doctor</p></a>
+                <a href="#"><p>– About Our Company</p></a>
+                <a href="#"><p>– Medical Service</p></a>
+                <a href="#"><p>– Make An Appointment</p></a>
+            </article>
+            <article>
+                <h3>Address Us</h3>
+                <div class="adres">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Adress: 21 Division St, <br> Rangpur, RS 101215, RMS</p>
+                </div>
+                <div class="adres">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Phone: +06544451100 <br> Fax: +(03)1548656845</p>
+                </div>
+                <div class="adres">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <p>Email: info@example.com <br> Website: yourwebsite.com</p>
+                </div>
+            </article>
+            <article>
+                <h3>Working Hours</h3>
+                <div class="hours">
+                    <p>Tuesday - Friday</p>
+                    <p>08:00 - 20:00</p>
+                </div>
+                <div class="hours">
+                    <p>Saturday</p>
+                    <p>09:00 - 18:00</p>
+                </div>
+                <div class="hours">
+                    <p>Sunday</p>
+                    <p>09:00 - 18:00</p>
+                </div>
+                <div class="hours">
+                    <p>Monday</p>
+                    <p>09:00 - 18:00</p>
+                </div>
+            </article>
+        </div>
+    </footer>
+    <script>
+        $(".pregunta").click(function () {
+          var t = $(this);
+          var tp = t.next();
+          tp.slideToggle();
+        });
+    </script>
+    <script>
+        var fondomodal = document.getElementById("modal");
+        var btn = document.getElementById("btn");
+        var cerrar = document.getElementById("cerrarbtn");
+        btn.onclick = function () {
+            fondomodal.style.display = "block";
+        };
+        cerrar.onclick = function () {
+            fondomodal.style.display = "none";
+        };
+        window.onclick = function (event) {
+            if (event.target == fondomodal) {
+            fondomodal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
